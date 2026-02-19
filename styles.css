@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+html {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+:root {
+    --color-bg: #151D22;
+    --color-primary: #1CF7D2;
+    --color-secondary: #0B1217;
+    --color-tertiary: #E6EAEE;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-bg);
+}
+
+header {
+    height: 6rem;
+    max-width: 910px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.toolbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-bg);
+}
+
+.toolbar-btn {
+    height: 100%;
+    padding: 0.6rem;
+    font-size: 2rem;
+    color: var(--color-primary);
+    background-color: var(--color-bg);
+    border: solid 1px var(--color-primary);
+    border-radius: 8px;
+}
+
+.toolbar-searchbar {
+    height: 100%;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-tertiary);
+    border-radius: 8px;
+    color: var(--color-tertiary);
+}
+
+.toolbar-searchbar__icon {
+    font-size: 8rem;
+}
+
+.toolbar-searchbar input {
+    background-color: transparent;
+    border: none;
+    letter-spacing: 0.05em;
+}
+
+.toolbar-searchbar input::placeholder {
+    font-style: italic;
+    color: var(--color-tertiary);
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    color: var(--color-tertiary);
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
